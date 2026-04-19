@@ -431,7 +431,7 @@ wheels = [
 ]
 
 [[package]]
-name = "s-curit-delivery"
+name = "secure-delivery"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
@@ -450,10 +450,10 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "fastapi", specifier = ">=0.136.0" },
-    { name = "jinja2", specifier = ">=3.1.6" },
-    { name = "pytest", specifier = ">=9.0.3" },
-    { name = "requests", specifier = ">=2.33.1" },
+    { name = "fastapi", specifier = ">=0.95.0" },
+    { name = "jinja2", specifier = ">=2.10" },
+    { name = "pytest", specifier = ">=8.0.0" },
+    { name = "requests", specifier = ">=2.19.1" },
     { name = "uvicorn", specifier = ">=0.44.0" },
 ]
 
