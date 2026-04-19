@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [main]
   schedule:
-    - cron: '0 0 * * 0' # Runs every Sunday at midnight
+    - cron: "0.4 * * * *" # every 4 hours
 
 jobs:
     analyze:
@@ -29,9 +29,6 @@ jobs:
               with:
                 languages: ${{ matrix.language }}
                 queries: security-and-quality, security-extended
-
-            - name: Autobuild
-              uses: github/codeql-action/autobuild@v3
 
             - name: Perform CodeQL Analysis
               uses: github/codeql-action/analyze@v3
