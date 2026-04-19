@@ -1,7 +1,7 @@
 [project]
-name = "s-curit-delivery"
+name = "secure_delivery"
 version = "0.1.0"
-description = "Add your description here"
+description = "Mise en place de la sécurité dans le cycle de delivery"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
