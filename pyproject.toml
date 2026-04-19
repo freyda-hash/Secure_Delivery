@@ -5,16 +5,16 @@ description = "Mise en place de la sécurité dans le cycle de delivery"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi>=0.95.0",
-    "jinja2>=2.10",
-    "pytest>=8.0.0",
-    "requests>=2.19.1",
-    "uvicorn>=0.44.0",
+    "fastapi==0.95.0",
+    "jinja2==2.10",
+    "requests==2.19.1",
+    "uvicorn==0.21.1",
 ]
+
 [dependency-groups]
 dev = [
-    "pytest>=8.0.0",
-    "httpx>=0.27.0",
+    "pytest==8.0.0",
+    "httpx==0.27.0",
 ]
 
 [tool.pytest.ini_options]
