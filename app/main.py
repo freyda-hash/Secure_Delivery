@@ -1,5 +1,5 @@
 #Cette app permet de ping l'hote utilisateur
-from Fastapi import FastAPI, Query
+from fastapi import FastAPI, Query
 import subprocess
 
 app = FastAPI()
