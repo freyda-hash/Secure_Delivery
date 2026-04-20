@@ -5,7 +5,7 @@ description = "Mise en place de la sécurité dans le cycle de delivery"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "fastapi==0.95.0",
+    "fastapi==0.136.0",
     "jinja2==2.10",
     "uvicorn==0.21.1",
     "python-multipart==0.0.5",
