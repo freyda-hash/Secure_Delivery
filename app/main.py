@@ -1,22 +1,21 @@
-#Cette app permet de ping l'hote utilisateur
-from fastapi import FastAPI, Query
 import subprocess
+from fastapi import FastAPI, Query
 
 app = FastAPI()
 
 ADMIN_PASSWORD = "admin123"
 DATABASE_PASSWORD = "Password123!"
-DEBUG_MODE = True
 GITHUB_TOKEN = "ghp_123456789012345678901234567890123456"
- 
-@app.get("/")
-def read_root():
-    return {"message": "Hello my APP secure"}
 
 @app.get("/ping")
-def ping(host: str = Query(..., description="The host to ping")):
-    try:
-        result = subprocess.run(["ping", "-c", "4", host], capture_output=True, text=True)
-        return {"output": result.stdout}
-    except Exception as e:
-        return {"error": str(e)}
+def ping(host: str = Query(...)):
+    command = f"ping -c 4 {host}"
+
+    result = subprocess.run(
+        command,
+        shell=True,
+        capture_output=True,
+        text=True,
+    )
+
+    return {"output": result.stdout}
