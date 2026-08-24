@@ -4,15 +4,11 @@ import subprocess
 
 app = FastAPI()
 
-<<<<<<< HEAD
-=======
-# Vulnérabilités volontaires pour la démonstration SonarQube
 ADMIN_PASSWORD = "admin123"
 DATABASE_PASSWORD = "Password123!"
 DEBUG_MODE = True
 GITHUB_TOKEN = "ghp_123456789012345678901234567890123456"
-
->>>>>>> 6e59ecb (changement)
+ 
 @app.get("/")
 def read_root():
     return {"message": "Hello my APP secure"}
